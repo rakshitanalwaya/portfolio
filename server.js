@@ -7,8 +7,11 @@ const { recordPageView, recordClickEvent, getAnalyticsSummary } = require('./dat
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const HOST = process.env.HOST || '0.0.0.0';
 const ADMIN_TOKEN = process.env.ADMIN_TOKEN || 'change-me-in-production';
 const BASE_PATH = process.env.BASE_PATH || '/';
+
+app.set('trust proxy', 1);
 
 function assetUrl(url) {
   if (!url) return '';
@@ -134,7 +137,10 @@ app.get('/health', (_req, res) => {
   res.json({ status: 'ok' });
 });
 
-app.listen(PORT, () => {
-  console.log(`Portfolio running at http://localhost:${PORT}`);
-  console.log(`Analytics dashboard: http://localhost:${PORT}/admin`);
+app.listen(PORT, HOST, () => {
+  console.log(`Portfolio running at http://${HOST}:${PORT}`);
+  console.log(`Analytics dashboard: http://${HOST}:${PORT}/admin`);
+  if (process.env.RENDER) {
+    console.log('Deployed on Render — use your Render URL + /admin for analytics');
+  }
 });

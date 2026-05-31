@@ -10,7 +10,7 @@ Professional portfolio site for job applications, built with **Node.js**, **Expr
 - Dedicated **AI Project Spotlight** section
 - LinkedIn and GitHub integration
 - Downloadable resume PDF
-- Analytics (local Node server only): page views, click tracking, dashboard at `/admin`
+- Analytics: page views, click tracking, private dashboard at `/admin` (Node server or Render)
 
 ## Local development
 
@@ -28,6 +28,64 @@ npm start
 Edit **`data/profile.json`** to update your profile. Your resume PDF lives at **`public/resume/Resume_Rakshita.pdf`**.
 
 After editing, restart the server (`npm start`) or use `npm run dev` for auto-reload.
+
+## Deploy on Render (full site + analytics)
+
+Use [Render](https://render.com) to host the **Node.js app** so `/admin` tracks real visitors on a public URL.
+
+### Option A — Render Dashboard (recommended)
+
+1. Push this repo to [github.com/rakshitanalwaya/portfolio](https://github.com/rakshitanalwaya/portfolio)
+2. [Render Dashboard](https://dashboard.render.com) → **New** → **Blueprint**
+3. Connect the `portfolio` repository (uses `render.yaml` in this repo)
+4. After deploy, open **Environment** and copy the generated `ADMIN_TOKEN`
+5. Visit:
+   - Site: `https://<your-service>.onrender.com`
+   - Admin: `https://<your-service>.onrender.com/admin`
+
+Manual web service settings:
+
+| Setting | Value |
+|---------|--------|
+| Build Command | `npm install && npm run init-db` |
+| Start Command | `npm start` |
+| Health Check | `/health` |
+| `NODE_VERSION` | `22.22.0` |
+| `BASE_PATH` | `/` |
+| `ADMIN_TOKEN` | generate a secret |
+
+**Note:** SQLite analytics persist while the service runs. On Render’s free plan, data may reset when you redeploy.
+
+### Option B — Render MCP in Cursor
+
+Per [Render’s MCP docs](https://render.com/docs/mcp-server):
+
+1. Create a [Render API key](https://dashboard.render.com/u/settings?add-api-key)
+2. Add to `~/.cursor/mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "render": {
+      "url": "https://mcp.render.com/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_RENDER_API_KEY"
+      }
+    }
+  }
+}
+```
+
+3. Restart Cursor
+4. Prompt: *Set my Render workspace to [YOUR_WORKSPACE]*
+5. Prompt: *Create a web service from github.com/rakshitanalwaya/portfolio with build npm install && npm run init-db and start npm start*
+
+### Using the admin dashboard on Render
+
+1. Open `https://<your-service>.onrender.com/admin`
+2. Enter `ADMIN_TOKEN` from Render **Environment**
+3. Click **Load data**
+4. Visit your live site — page views and clicks appear in the dashboard
 
 ## Deploy to GitHub Pages
 
