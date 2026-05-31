@@ -1,0 +1,311 @@
+{
+  "_editGuide": {
+    "note": "This block is NOT shown on the website — safe to keep for your reference.",
+    "file": "data/profile.json",
+    "experienceBullets": "Edit the achievements array under each role in experience. Each string becomes one bullet on the site.",
+    "otherEditableFields": {
+      "description": "One-line role summary under the job title",
+      "technologies": "Skill tags shown as pills below bullets",
+      "period": "Date range, e.g. July 2023 – Present",
+      "highlights": "Same as achievements, but for education and projects sections",
+      "caseStudies": "Add entries under the caseStudies array. Each case study appears on the site and in the /admin dashboard. Fields: title, company, role, period, category, summary, challenge, approach, results, metrics (array), highlights (array), technologies (array), documentUrl (optional PDF link), featured (true/false)."
+    },
+    "afterEditing": "Save this file, then restart the server (npm start) or use npm run dev for auto-reload."
+  },
+  "name": "Rakshita Nalwaya",
+  "title": "Technical Product Manager",
+  "tagline": "Product leader at the intersection of AI, fintech, and platform strategy — turning complex workflows into scalable, data-driven products.",
+  "email": "rakshitanalwaya@gmail.com",
+  "phone": "+1 (607) 262-1357",
+  "location": "Chicago, Illinois, United States",
+  "linkedin": "https://www.linkedin.com/in/rakshitanalwaya/",
+  "github": "https://github.com/rakshitanalwaya",
+  "resumeUrl": "/resume/Resume_Rakshita.pdf",
+  "about": "I am a Technical Product Manager with a computer science foundation and 6+ years of experience spanning fintech, CRM platforms, and enterprise risk management. At Ygrene Energy Fund, I own product strategy for automation, portal modernization, and sales analytics — delivering measurable impact including 30% faster underwriting and 25% higher user satisfaction. Previously at Bank of America, I progressed from CRM Data Analyst — managing Salesforce infrastructure for 30,000+ users — to Risk Management Associate, leading risk remediation and disaster recovery across 15+ applications. I combine hands-on AI implementation with cross-functional leadership, from LLM-powered applications to enterprise platform rollouts. Selected for Cornell Johnson's Digital Technology Immersion Program, I am actively exploring roles where product vision meets applied AI and data-driven decision making.",
+  "skills": [
+    "Product Management",
+    "LLM Evaluation",
+    "Agentic AI Workflows",
+    "Agile / Scrum",
+    "Roadmap Development",
+    "Python",
+    "REST APIs",
+    "SQL",
+    "SaaS Platforms",
+    "Salesforce",
+    "CRM",
+    "Data Analytics",
+    "Fintech",
+    "Risk Management"
+  ],
+  "honors": [
+    {
+      "title": "Global Recognition — Silver Award",
+      "organization": "Bank of America",
+      "period": "May 2021",
+      "description": "Recognized for outstanding contribution and impact across enterprise risk and platform operations."
+    }
+  ],
+  "leadership": [
+    {
+      "title": "Digital Technology Immersion (DTI) Program",
+      "organization": "Johnson Graduate School of Management, Cornell University",
+      "period": "2022 – 2023",
+      "description": "Select participant in an intensive program exploring AI, digital transformation, and platform strategy at the intersection of technology and business leadership."
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Engineering in Engineering Management",
+      "institution": "Cornell University",
+      "location": "Ithaca, NY",
+      "period": "Aug 2022 – May 2023",
+      "gpa": "3.78 / 4.0",
+      "highlights": [
+        "Digital Technology Immersion Program — AI, digital transformation, and platform strategy",
+        "Coursework bridging engineering, product, and business decision-making"
+      ]
+    },
+    {
+      "degree": "Bachelor of Technology in Computer Science and Engineering",
+      "institution": "Vellore Institute of Technology",
+      "location": "Tamil Nadu, India",
+      "period": "July 2015 – May 2019",
+      "gpa": "3.82 / 4.0",
+      "highlights": [
+        "Foundation in software engineering, algorithms, and systems design",
+        "Built early expertise in Python, data mining, and NLP through academic projects"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Technical Product Manager",
+      "company": "Ygrene Energy Fund",
+      "location": "Remote, US",
+      "period": "July 2023 – Present",
+      "description": "Own product strategy and execution for underwriting automation, customer portal modernization, and sales analytics in a fintech lending environment.",
+      "achievements": [
+        "Identified manual income verification as an underwriting bottleneck and led integration of a third-party income verification API, reducing processing time by 30%",
+        "Owned roadmap for customer portal modernization — Angular upgrade and targeted UX improvements — driving a 25% increase in user satisfaction",
+        "Led translation of revised underwriting policy into core funding calculation engine changes, increasing max project funding by 5% while maintaining compliance",
+        "Led end-to-end execution of marketing website redesign supporting company rebranding and top-of-funnel acquisition goals",
+        "Standardized sales funnel analytics with KPI architecture and automated reporting, improving pipeline forecasting and weekly business reviews"
+      ],
+      "technologies": ["Angular", "REST APIs", "SQL", "Figma", "Jira", "Qlik", "Ruby", "Drupal", "Monday.com"]
+    },
+    {
+      "role": "Risk Management Associate",
+      "company": "Bank of America",
+      "location": "Chennai, Tamil Nadu, India",
+      "period": "June 2020 – May 2022",
+      "description": "Led access provisioning, security remediation, and operational resilience initiatives across 15+ enterprise applications on the Wealth Service Platform.",
+      "achievements": [
+        "Onboarded 10 applications to a centralized access provisioning platform, eliminating manual workflows and saving 30+ hours of operational effort per month",
+        "Identified and assessed risks for 15+ applications, developing mitigation strategies that reduced risk score by 75% through cross-functional remediation",
+        "Collaborated with cross-functional teams to remediate risk issues, trained new hires on onboarding processes, and created technical documentation guidelines",
+        "Developed disaster recovery plans and process flows, leading annual DR testing to ensure operational resilience and compliance",
+        "Directed implementation of an updated framework to streamline risk management workflows and increase operational efficiency",
+        "Spearheaded data archival of 20GB+ for application decommissioning in collaboration with engineering"
+      ],
+      "technologies": ["Salesforce CRM", "SQL", "Unix", "Autosys", "SDLC", "Excel(Advanced)"]
+    },
+    {
+      "role": "CRM Data Analyst",
+      "company": "Bank of America",
+      "location": "Chennai Area, India",
+      "period": "June 2019 – May 2020",
+      "description": "Owned CRM platform operations and risk capabilities for the Wealth Service Platform, supporting Retirement, Equity Management, and Venture Service Group business lines.",
+      "achievements": [
+        "Monitored, analyzed, and revamped production infrastructure for a Salesforce CRM application serving 30,000+ users",
+        "Served as risk SPOC for 15+ applications under the Wealth Service Platform and associated technologies",
+        "Owned and managed risk capabilities across Retirement, Equity Management, and Venture Service Group",
+        "Envisioned, redesigned, and optimized production infrastructure for user visibility, e-communications, and event & seminar planning for business users"
+      ],
+      "technologies": ["Informatica PowerCenter", "Salesforce CRM", "SQL", "Unix", "Autosys"]
+    }
+  ],
+  "caseStudies": [
+    {
+      "id": "income-verification-automation",
+      "title": "Automating Income Verification in Underwriting",
+      "company": "Ygrene Energy Fund",
+      "role": "Technical Product Manager",
+      "period": "2024",
+      "category": "Fintech / Product",
+      "summary": "Identified a manual underwriting bottleneck and led integration of a third-party income verification API — cutting processing time by 30%.",
+      "challenge": "Manual income verification was slowing down the underwriting pipeline, creating delays for customers and operational overhead for the lending team.",
+      "approach": "Partnered with underwriting, engineering, and compliance to evaluate vendors, define API requirements, and drive integration into the existing funding workflow.",
+      "results": "Delivered a production-ready automation that reduced income verification processing time by 30% while maintaining compliance standards.",
+      "metrics": [
+        "30% faster income verification",
+        "Reduced manual review steps",
+        "Improved underwriting throughput"
+      ],
+      "highlights": [
+        "Led vendor evaluation and API integration planning",
+        "Translated underwriting policy into technical requirements",
+        "Coordinated cross-functional rollout with engineering and ops"
+      ],
+      "technologies": ["REST APIs", "Underwriting Platform", "Jira", "SQL"],
+      "documentUrl": "",
+      "featured": true
+    },
+    {
+      "id": "customer-portal-modernization",
+      "title": "Customer Portal Modernization & UX Overhaul",
+      "company": "Ygrene Energy Fund",
+      "role": "Technical Product Manager",
+      "period": "2023 – 2024",
+      "category": "Platform / UX",
+      "summary": "Owned the roadmap for an Angular upgrade and targeted UX improvements that drove a 25% increase in user satisfaction.",
+      "challenge": "The customer portal had outdated UX patterns and technical debt that hurt usability and slowed feature delivery.",
+      "approach": "Defined a phased modernization roadmap — Angular upgrade, UX quick wins, and analytics instrumentation — prioritizing high-impact customer journeys.",
+      "results": "Shipped portal improvements that increased user satisfaction by 25% and established a foundation for faster iteration.",
+      "metrics": [
+        "25% increase in user satisfaction",
+        "Angular framework upgrade",
+        "Improved feature delivery velocity"
+      ],
+      "highlights": [
+        "Owned end-to-end product roadmap and stakeholder alignment",
+        "Partnered with design on targeted UX improvements",
+        "Balanced modernization with ongoing business delivery"
+      ],
+      "technologies": ["Angular", "Figma", "REST APIs", "SQL", "Jira"],
+      "documentUrl": "",
+      "featured": true
+    },
+    {
+      "id": "best-dish-food-finder",
+      "title": "Best Dish – Food Finder App",
+      "company": "Cornell University",
+      "role": "M.Eng Engineering Management",
+      "period": "2022 – 2023",
+      "category": "Product Strategy / GTM",
+      "summary": "Researched personas and go-to-market strategy through market research and customer segmentation surveys, sizing the TAM and building a revenue model with KPIs for satisfaction and business impact.",
+      "challenge": "A food discovery concept needed a validated understanding of target users, market opportunity, and measurable success criteria before product investment.",
+      "approach": "Conducted extensive market research and surveys across customer segments, developed user personas, sized the total addressable market, and built a revenue model aligned to the proposed business model.",
+      "results": "Delivered a go-to-market foundation with defined KPIs for customer satisfaction and business impact — enabling data-driven decision-making for product and growth priorities.",
+      "metrics": [
+        "Persona-driven customer segmentation",
+        "Total addressable market sizing",
+        "KPI framework for satisfaction & impact"
+      ],
+      "highlights": [
+        "Researched personas and go-to-market strategy through extensive market research and surveys on different customer segmentation",
+        "Identified the total addressable market and built a revenue model",
+        "Defined a set of KPIs to measure customer satisfaction and business impact with the ability to analyze them and utilize them in decision-making processes"
+      ],
+      "technologies": ["Market Research", "Personas", "GTM Strategy", "Revenue Modeling", "KPI Framework"],
+      "documentUrl": "",
+      "featured": false
+    },
+    {
+      "id": "sharecharge-ev-charging",
+      "title": "ShareCharge for EV — Tesla Charging Ecosystem Extension",
+      "company": "Cornell University",
+      "role": "M.Eng Engineering Management",
+      "period": "2022 – 2023",
+      "category": "Product Design / EV",
+      "summary": "Proposed a ShareCharge extension to the Tesla charging ecosystem — from competitive analysis and PRD through MVP roadmap and Figma prototypes.",
+      "challenge": "EV owners lack flexible, peer-to-peer charging options within existing ecosystems — requiring a differentiated product concept with a clear path to MVP launch.",
+      "approach": "Conducted competitive analysis to identify the target market, developed a product differentiation strategy, and created a PRD and press release. Built a launch roadmap with MVP feature prioritization and designed prototypes and wireframes in Figma.",
+      "results": "Produced an end-to-end product package — strategy, requirements, launch plan, and visual designs — demonstrating how ShareCharge could extend the Tesla charging ecosystem.",
+      "metrics": [
+        "Competitive analysis & differentiation strategy",
+        "PRD and press release delivered",
+        "MVP roadmap with Figma prototypes"
+      ],
+      "highlights": [
+        "Conducted competitive analysis to identify the target market and developed product differentiation strategy",
+        "Created a product requirement document and press release document",
+        "Created a roadmap to launch the product and prioritized features to be implemented in MVP design",
+        "Designed prototypes and wireframes using Figma to demonstrate the implementation"
+      ],
+      "technologies": ["Figma", "PRD", "Competitive Analysis", "Product Roadmap", "MVP Planning"],
+      "documentUrl": "",
+      "featured": false
+    },
+    {
+      "id": "rashida-sawyer-bakery-brand-analysis",
+      "title": "Brand Analysis — Rashida Sawyer Bakery",
+      "company": "Cornell University",
+      "role": "M.Eng Engineering Management",
+      "period": "2022 – 2023",
+      "category": "Brand Strategy / Research",
+      "summary": "Built a comprehensive brand personality report for Rashida Sawyer Bakery using customer surveys and interviews, with recommendations to grow awareness and retention.",
+      "challenge": "Rashida Sawyer Bakery needed a clearer understanding of its brand identity and actionable strategies to strengthen awareness and keep customers coming back.",
+      "approach": "Developed customer surveys and interviews to uncover key brand attributes and personality traits, then synthesized findings into a structured brand analysis with strategic recommendations.",
+      "results": "Delivered a comprehensive brand report with customer-backed insights and recommended strategies to increase brand awareness and improve customer retention.",
+      "metrics": [
+        "Customer surveys & interviews",
+        "Brand personality framework",
+        "Awareness & retention recommendations"
+      ],
+      "highlights": [
+        "Constructed a comprehensive report on the brand personality of RSB by developing customer surveys & interviews to understand its key brand attributes",
+        "Recommended strategies based on feedback to increase brand awareness and customer retention"
+      ],
+      "technologies": ["Brand Strategy", "Customer Research", "Surveys", "Interviews", "Market Analysis"],
+      "documentUrl": "",
+      "featured": false
+    }
+  ],
+  "projects": [
+    {
+      "name": "AI News Aggregator",
+      "featured": true,
+      "category": "AI / Agentic Systems",
+      "description": "End-to-end AI-powered news aggregator built with agentic workflows — ingesting RSS feeds and YouTube transcripts, ranking stories with LLMs, and delivering personalized daily digests. Includes production deployment with Docker and PostgreSQL.",
+      "technologies": ["Python", "OpenAI", "Agentic AI", "PostgreSQL", "SQLAlchemy", "Docker", "Feedparser"],
+      "github": "https://github.com/rakshitanalwaya/ai-news-aggregator-master",
+      "live": "",
+      "highlights": [
+        "Architected multi-phase build: local core → deployment infrastructure → production-ready optimizations",
+        "Built agent-based pipeline for scraping, summarization, and personalized content ranking",
+        "Leveraged OpenAI APIs with structured Pydantic models for reliable LLM outputs",
+        "Designed for real-world deployment with Docker, environment config, and scheduled daily runs"
+      ]
+    },
+    {
+      "name": "Natural Language Processing — Coursera",
+      "featured": true,
+      "category": "AI / NLP",
+      "description": "Comprehensive solutions for HSE's Natural Language Processing course covering text classification, sequence tagging, language modeling, and neural NLP architectures.",
+      "technologies": ["Python", "NLP", "Neural Networks", "Jupyter"],
+      "github": "https://github.com/rakshitanalwaya/HSE-NLP-Coursera",
+      "live": "",
+      "highlights": [
+        "Implemented core NLP tasks: sentiment analysis, NER, and text generation",
+        "Applied modern deep learning techniques to language processing problems",
+        "Course: Language Processing (HSE / Coursera)"
+      ]
+    },
+    {
+      "name": "Data Mining with Python",
+      "featured": false,
+      "category": "AI / Data Science",
+      "description": "Python-based data mining project applying classification, clustering, and pattern discovery techniques to extract insights from structured datasets.",
+      "technologies": ["Python", "Data Mining", "Machine Learning", "Jupyter"],
+      "github": "https://github.com/rakshitanalwaya/Data-Mining-Python",
+      "live": "",
+      "highlights": [
+        "Applied supervised and unsupervised learning for pattern discovery",
+        "Hands-on exploration of data preprocessing, feature engineering, and model evaluation"
+      ]
+    },
+    {
+      "name": "NLP Class Project",
+      "featured": false,
+      "category": "AI / NLP",
+      "description": "Academic NLP project implementing text processing and language model experiments in Python.",
+      "technologies": ["Python", "NLP", "Jupyter"],
+      "github": "https://github.com/rakshitanalwaya/nlpclass__task",
+      "live": "",
+      "highlights": [
+        "Applied NLP techniques to real text datasets in a structured academic setting"
+      ]
+    }
+  ]
+}

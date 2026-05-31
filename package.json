@@ -1,0 +1,21 @@
+{
+  "name": "personal-portfolio",
+  "version": "1.0.0",
+  "description": "Professional portfolio website with analytics for job applications",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "init-db": "node database/init.js",
+    "build": "node scripts/build-static.js"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.10.0",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "uuid": "^11.1.0"
+  }
+}

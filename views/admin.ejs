@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Analytics Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="<%= basePath %>css/styles.css">
+  <link rel="stylesheet" href="<%= basePath %>css/admin.css">
+</head>
+<body class="admin-body">
+  <script>
+    window.PORTFOLIO_BASE_PATH = '<%= basePath %>';
+  </script>
+  <div class="admin-container">
+    <header class="admin-header">
+      <div>
+        <p class="eyebrow">Private</p>
+        <h1>Analytics Dashboard</h1>
+        <p class="admin-subtitle">Track visitors and link clicks on your portfolio.</p>
+      </div>
+      <a href="<%= basePath %>" class="btn btn-secondary">Back to site</a>
+    </header>
+
+    <section class="admin-auth" id="auth-panel">
+      <label for="admin-token">Admin token</label>
+      <div class="auth-row">
+        <input type="password" id="admin-token" placeholder="Enter ADMIN_TOKEN" autocomplete="off">
+        <button type="button" class="btn btn-primary" id="load-analytics">Load data</button>
+      </div>
+      <p class="auth-hint">Set <code>ADMIN_TOKEN</code> in your environment. Default for local dev: <code>change-me-in-production</code></p>
+    </section>
+
+    <div id="dashboard" hidden>
+      <section class="stats-grid" id="stats-grid"></section>
+
+      <section class="admin-panel admin-panel--wide admin-case-studies" id="case-studies-panel">
+        <div class="admin-panel__header">
+          <div>
+            <h2>Case studies</h2>
+            <p class="admin-panel__desc">Published case studies from your portfolio. Click counts track expand and document link interactions.</p>
+          </div>
+          <a href="<%= basePath %>#case-studies" class="btn btn-secondary" target="_blank" rel="noopener">View on site</a>
+        </div>
+        <div class="case-studies-admin-grid" id="case-studies-grid"></div>
+      </section>
+
+      <div class="admin-panels">
+        <section class="admin-panel">
+          <h2>Views by day</h2>
+          <div class="table-wrap">
+            <table id="views-by-day">
+              <thead><tr><th>Date</th><th>Views</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="admin-panel">
+          <h2>Clicks by section</h2>
+          <div class="table-wrap">
+            <table id="clicks-by-section">
+              <thead><tr><th>Section</th><th>Clicks</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="admin-panel admin-panel--wide">
+          <h2>Top clicked links</h2>
+          <div class="table-wrap">
+            <table id="top-clicks">
+              <thead><tr><th>Label</th><th>Section</th><th>URL</th><th>Clicks</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="admin-panel">
+          <h2>Recent page views</h2>
+          <div class="table-wrap">
+            <table id="recent-views">
+              <thead><tr><th>Time</th><th>Path</th><th>Referrer</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="admin-panel">
+          <h2>Recent clicks</h2>
+          <div class="table-wrap">
+            <table id="recent-clicks">
+              <thead><tr><th>Time</th><th>Label</th><th>Section</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <p class="admin-error" id="admin-error" hidden></p>
+  </div>
+
+  <script src="<%= basePath %>js/admin.js"></script>
+</body>
+</html>

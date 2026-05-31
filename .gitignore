@@ -1,0 +1,8 @@
+node_modules/
+docs/
+database/analytics.db
+database/analytics.db-wal
+database/analytics.db-shm
+.env
+.DS_Store
+npm-debug.log*
