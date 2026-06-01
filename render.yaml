@@ -18,3 +18,5 @@ services:
         value: /
       - key: ADMIN_TOKEN
         generateValue: true
+      - key: GA_MEASUREMENT_ID
+        sync: false

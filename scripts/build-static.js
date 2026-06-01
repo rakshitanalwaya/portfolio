@@ -5,6 +5,7 @@ const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const DOCS = path.join(ROOT, 'docs');
 const BASE_PATH = process.env.BASE_PATH || '/portfolio/';
+const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID || '';
 const PUBLIC = path.join(ROOT, 'public');
 
 function assetUrl(url) {
@@ -37,7 +38,8 @@ async function build() {
     profile,
     basePath: BASE_PATH,
     assetUrl,
-    analyticsEnabled: false
+    analyticsEnabled: false,
+    gaMeasurementId: GA_MEASUREMENT_ID
   };
 
   const html = await ejs.renderFile(

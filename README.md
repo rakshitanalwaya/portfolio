@@ -111,9 +111,17 @@ Then open [http://localhost:3000/portfolio/](http://localhost:3000/portfolio/) (
 
 ```bash
 export ADMIN_TOKEN="your-secret-token"
+export GA_MEASUREMENT_ID="G-XXXXXXXXXX"
 export PORT=3000
 npm start
 ```
+
+## Google Analytics (GA4)
+
+This portfolio supports **Google Analytics 4** via `GA_MEASUREMENT_ID`.
+
+- **GitHub Pages (static deploy)**: add a repo secret named `GA_MEASUREMENT_ID` (e.g. `G-XXXXXXXXXX`). The GitHub Actions workflow injects it during `npm run build`.
+- **Render (Node server)**: set `GA_MEASUREMENT_ID` in Render → **Environment**.
 
 ## Links
 

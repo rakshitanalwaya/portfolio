@@ -10,6 +10,7 @@ const PORT = process.env.PORT || 3000;
 const HOST = process.env.HOST || '0.0.0.0';
 const ADMIN_TOKEN = process.env.ADMIN_TOKEN || 'change-me-in-production';
 const BASE_PATH = process.env.BASE_PATH || '/';
+const GA_MEASUREMENT_ID = process.env.GA_MEASUREMENT_ID || '';
 
 app.set('trust proxy', 1);
 
@@ -22,6 +23,7 @@ function assetUrl(url) {
 app.locals.basePath = BASE_PATH;
 app.locals.assetUrl = assetUrl;
 app.locals.analyticsEnabled = true;
+app.locals.gaMeasurementId = GA_MEASUREMENT_ID;
 
 const dbInitPath = path.join(__dirname, 'database', 'analytics.db');
 if (!fs.existsSync(dbInitPath)) {
