@@ -31,7 +31,16 @@ if (!fs.existsSync(dbInitPath)) {
 }
 
 const profilePath = path.join(__dirname, 'data', 'profile.json');
-const profile = JSON.parse(fs.readFileSync(profilePath, 'utf8'));
+let cachedProfile = JSON.parse(fs.readFileSync(profilePath, 'utf8'));
+
+function getProfile() {
+  try {
+    cachedProfile = JSON.parse(fs.readFileSync(profilePath, 'utf8'));
+  } catch (err) {
+    console.error('Failed to load profile.json, using last valid profile:', err.message);
+  }
+  return cachedProfile;
+}
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -71,6 +80,7 @@ function trackPageView(req, res, next) {
 app.use(trackPageView);
 
 app.get('/', (req, res) => {
+  const profile = getProfile();
   res.render('index', { profile });
 });
 
@@ -79,6 +89,7 @@ app.get('/admin', (req, res) => {
 });
 
 app.get('/api/analytics/summary', (req, res) => {
+  const profile = getProfile();
   const token = req.query.token || req.headers['x-admin-token'];
   if (token !== ADMIN_TOKEN) {
     return res.status(401).json({ error: 'Unauthorized' });

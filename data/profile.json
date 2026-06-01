@@ -60,7 +60,6 @@
       "institution": "Cornell University",
       "location": "Ithaca, NY",
       "period": "Aug 2022 – May 2023",
-      "gpa": "3.78 / 4.0",
       "highlights": [
         "Digital Technology Immersion Program — AI, digital transformation, and platform strategy",
         "Coursework bridging engineering, product, and business decision-making"
@@ -71,7 +70,6 @@
       "institution": "Vellore Institute of Technology",
       "location": "Tamil Nadu, India",
       "period": "July 2015 – May 2019",
-      "gpa": "3.82 / 4.0",
       "highlights": [
         "Foundation in software engineering, algorithms, and systems design",
         "Built early expertise in Python, data mining, and NLP through academic projects"
@@ -99,14 +97,13 @@
       "company": "Bank of America",
       "location": "Chennai, Tamil Nadu, India",
       "period": "June 2020 – May 2022",
-      "description": "Led access provisioning, security remediation, and operational resilience initiatives across 15+ enterprise applications on the Wealth Service Platform.",
+      "description": "Led access provisioning, security remediation, and operational resilience initiatives across 10+ enterprise applications on the Wealth Service Platform.",
       "achievements": [
         "Onboarded 10 applications to a centralized access provisioning platform, eliminating manual workflows and saving 30+ hours of operational effort per month",
-        "Identified and assessed risks for 15+ applications, developing mitigation strategies that reduced risk score by 75% through cross-functional remediation",
+        "Identified and assessed risks for 10+ applications, developing mitigation strategies that reduced risk score by 75% through cross-functional remediation",
         "Collaborated with cross-functional teams to remediate risk issues, trained new hires on onboarding processes, and created technical documentation guidelines",
         "Developed disaster recovery plans and process flows, leading annual DR testing to ensure operational resilience and compliance",
-        "Directed implementation of an updated framework to streamline risk management workflows and increase operational efficiency",
-        "Spearheaded data archival of 20GB+ for application decommissioning in collaboration with engineering"
+        "Directed implementation of an updated framework to streamline risk management workflows and increase operational efficiency"
       ],
       "technologies": ["Salesforce CRM", "SQL", "Unix", "Autosys", "SDLC", "Excel(Advanced)"]
     },
@@ -115,12 +112,12 @@
       "company": "Bank of America",
       "location": "Chennai Area, India",
       "period": "June 2019 – May 2020",
-      "description": "Owned CRM platform operations and risk capabilities for the Wealth Service Platform, supporting Retirement, Equity Management, and Venture Service Group business lines.",
+      "description": "Analyzed production and CRM data to support operational decision-making, improve data quality, and optimize business workflows.",
       "achievements": [
         "Monitored, analyzed, and revamped production infrastructure for a Salesforce CRM application serving 30,000+ users",
-        "Served as risk SPOC for 15+ applications under the Wealth Service Platform and associated technologies",
-        "Owned and managed risk capabilities across Retirement, Equity Management, and Venture Service Group",
-        "Envisioned, redesigned, and optimized production infrastructure for user visibility, e-communications, and event & seminar planning for business users"
+        "Resolved 10+ quality tickets daily by analyzing production data and identifying the root cause, increasing the customer satisfaction score by 30%",
+        "Trained 5+ members and provided knowledge transfer sessions, improving the performance of the team by 35%",
+        "Spearheaded data archival of 20GB+ for application decommissioning in collaboration with engineering"
       ],
       "technologies": ["Informatica PowerCenter", "Salesforce CRM", "SQL", "Unix", "Autosys"]
     }
@@ -131,7 +128,7 @@
       "title": "Automating Income Verification in Underwriting",
       "company": "Ygrene Energy Fund",
       "role": "Technical Product Manager",
-      "period": "2024",
+      "period": "2025 – 2026",
       "category": "Fintech / Product",
       "summary": "Identified a manual underwriting bottleneck and led integration of a third-party income verification API — cutting processing time by 30%.",
       "challenge": "Manual income verification was slowing down the underwriting pipeline, creating delays for customers and operational overhead for the lending team.",
@@ -156,7 +153,7 @@
       "title": "Customer Portal Modernization & UX Overhaul",
       "company": "Ygrene Energy Fund",
       "role": "Technical Product Manager",
-      "period": "2023 – 2024",
+      "period": "2024 – 2025",
       "category": "Platform / UX",
       "summary": "Owned the roadmap for an Angular upgrade and targeted UX improvements that drove a 25% increase in user satisfaction.",
       "challenge": "The customer portal had outdated UX patterns and technical debt that hurt usability and slowed feature delivery.",
