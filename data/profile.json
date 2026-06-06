@@ -14,14 +14,14 @@
   },
   "name": "Rakshita Nalwaya",
   "title": "Technical Product Manager",
-  "tagline": "Product leader at the intersection of AI, fintech, and platform strategy — turning complex workflows into scalable, data-driven products.",
+  "tagline": "Product leader at the intersection of AI, fintech, and platform strategy, turning complex workflows into scalable, data-driven products.",
   "email": "rakshitanalwaya@gmail.com",
   "phone": "+1 (607) 262-1357",
   "location": "Chicago, Illinois, United States",
   "linkedin": "https://www.linkedin.com/in/rakshitanalwaya/",
   "github": "https://github.com/rakshitanalwaya",
   "resumeUrl": "/resume/Resume_Rakshita.pdf",
-  "about": "I am a Technical Product Manager with a computer science foundation and 6+ years of experience spanning fintech, CRM platforms, and enterprise risk management. At Ygrene Energy Fund, I own product strategy for automation, portal modernization, and sales analytics — delivering measurable impact including 30% faster underwriting and 25% higher user satisfaction. Previously at Bank of America, I progressed from CRM Data Analyst — managing Salesforce infrastructure for 30,000+ users — to Risk Management Associate, leading risk remediation and disaster recovery across 10+ applications. I combine hands-on AI implementation with cross-functional leadership, from LLM-powered applications to enterprise platform rollouts. Selected for Cornell Johnson's Digital Technology Immersion Program, I am actively exploring roles where product vision meets applied AI and data-driven decision making.",
+  "about": "I am a Technical Product Manager with a computer science foundation and 6+ years of experience spanning fintech, CRM platforms, and enterprise risk management. At Ygrene Energy Fund, I own product strategy for automation, portal modernization, and sales analytics delivering measurable impact including 30% faster underwriting and 25% higher user satisfaction. Previously at Bank of America, I progressed from CRM Data Analyst managing Salesforce infrastructure for 30,000+ users to Risk Management Associate, leading risk remediation and disaster recovery across 10+ applications. I combine hands-on AI implementation with cross-functional leadership, from LLM-powered applications to enterprise platform rollouts. Selected for Cornell Johnson's Digital Technology Immersion Program, I am actively exploring roles where product vision meets applied AI and data-driven decision making.",
   "skills": [
     "Product Management",
     "LLM Evaluation",
@@ -61,7 +61,7 @@
       "location": "Ithaca, NY",
       "period": "Aug 2022 – May 2023",
       "highlights": [
-        "Digital Technology Immersion Program — AI, digital transformation, and platform strategy",
+        "Digital Technology Immersion Program participant exploring AI, digital transformation, and platform strategy",
         "Coursework bridging engineering, product, and business decision-making"
       ]
     },
@@ -85,7 +85,7 @@
       "description": "Own product strategy and execution for underwriting automation, customer portal modernization, and sales analytics in a fintech lending environment.",
       "achievements": [
         "Identified manual income verification as an underwriting bottleneck and led integration of a third-party income verification API, reducing processing time by 30%",
-        "Owned roadmap for customer portal modernization — Angular upgrade and targeted UX improvements — driving a 25% increase in user satisfaction",
+        "Owned roadmap for customer portal modernization by targetting Angular upgrade and targeted UX improvements, driving a 25% increase in user satisfaction",
         "Led translation of revised underwriting policy into core funding calculation engine changes, increasing max project funding by 5% while maintaining compliance",
         "Led end-to-end execution of marketing website redesign supporting company rebranding and top-of-funnel acquisition goals",
         "Standardized sales funnel analytics with KPI architecture and automated reporting, improving pipeline forecasting and weekly business reviews"
