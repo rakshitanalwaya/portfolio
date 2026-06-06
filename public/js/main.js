@@ -27,6 +27,7 @@
     document.querySelectorAll('main .book-chapter, main .book-cover')
   );
   var sections = document.querySelectorAll('section[id]');
+  var navAnchors = document.querySelectorAll('.nav-links a[href^="#"]');
   var tocAnchors = document.querySelectorAll('.book-toc__list a[href^="#"]');
   var tocProgressBar = document.querySelector('.book-toc__progress-bar');
   var tocPageCurrent = document.querySelector('.book-toc__page-current');
@@ -50,6 +51,10 @@
   }
 
   function setActiveChapter(id) {
+    navAnchors.forEach(function (anchor) {
+      var href = anchor.getAttribute('href');
+      anchor.classList.toggle('is-active', href === '#' + id);
+    });
     tocAnchors.forEach(function (anchor) {
       var href = anchor.getAttribute('href');
       anchor.classList.toggle('is-active', href === '#' + id);
@@ -59,7 +64,29 @@
     }
   }
 
-  if (sections.length && tocAnchors.length) {
+  function scrollToTop() {
+    window.scrollTo({
+      top: 0,
+      behavior: prefersReducedMotion ? 'auto' : 'smooth'
+    });
+    if (window.history && window.history.replaceState) {
+      history.replaceState(null, '', window.location.pathname + window.location.search);
+    }
+    setActiveChapter('hero');
+    setTocMenuOpen(false);
+    if (typeof updateStoryState === 'function') {
+      updateStoryState();
+    }
+  }
+
+  document.querySelectorAll('.footer-top, .nav-logo[href="#top"]').forEach(function (link) {
+    link.addEventListener('click', function (e) {
+      e.preventDefault();
+      scrollToTop();
+    });
+  });
+
+  if (sections.length && (navAnchors.length || tocAnchors.length)) {
     var sectionObserver = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
@@ -170,6 +197,8 @@
       setActiveChapter('hero');
     }
 
+    body.classList.toggle('is-nav-ready', heroProgress > 0.32);
+
     if (header) {
       var pastHero = heroSection
         ? heroSection.getBoundingClientRect().bottom < window.innerHeight * 0.35
@@ -217,7 +246,7 @@
   } else {
     document.documentElement.style.setProperty('--hero-progress', '1');
     document.documentElement.style.setProperty('--header-solid', '1');
-    body.classList.add('is-story-active');
+    body.classList.add('is-story-active', 'is-nav-ready');
     revealElements.forEach(function (el) {
       el.classList.add('is-visible');
     });
